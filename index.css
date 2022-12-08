@@ -1,7 +1,30 @@
 header{
-    background-color: antiquewhite;
+    background-color: #695239;
     min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mainSection {
+    display: flex;
+}
+
+.sidebar{
+    margin-top: 5px;
+    width: 30%;
+    padding: 10px;
+    background-color: antiquewhite;
+    min-height: 80vh;
+    max-height: 80vh;
+}
+
+.mainBody{
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 10px;
+    width: 80%;
+    border: 5px dotted #695239;
+    border-radius: 20px 20px;
+    ;
 }
