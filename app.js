@@ -1,9 +1,11 @@
 let app = new Vue({
     el: "#app",
-    data(){
-
+    data() {
+        return {
+            headerText: "Vue toDo App"
+        }
     },
     methods: {
-        
+
     }
 })
