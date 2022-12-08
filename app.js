@@ -9,3 +9,15 @@ let app = new Vue({
 
     }
 })
+
+const aCard = document.querySelector(".card");
+
+
+aCard.addEventListener('click', () => {
+    let selectedText = aCard.innerHTML;
+    if(selectedText === "Hello World"){
+        aCard.innerHTML = "Clicked on!"
+    }else{
+        aCard.innerHTML = "Hello World"
+    }
+})
