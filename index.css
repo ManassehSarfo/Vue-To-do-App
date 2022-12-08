@@ -20,12 +20,19 @@ header{
     /* background-color: antiquewhite; */
     min-height: 80vh;
     max-height: 80vh;
+    overflow-y: scroll;
 }
 
 .sidetab{
     background-color: antiquewhite;
     padding: 10px;
     margin: 10px;
+}
+
+.sidetab:hover{
+    background-color: #695239;
+    color: white;
+    font-weight: bold;
 }
 
 .mainBody{
