@@ -16,36 +16,14 @@
         </header>
         <section class="mainSection">
             <div class="sidebar">
-                <div class="sidetab">Hi there</div>
-                <div class="sidetab">Hi there</div>
-                <div class="sidetab">Hi there</div>
-                <div class="sidetab">Hi there</div>
-                <div class="sidetab">Hi there</div>
-                <div class="sidetab">Hi there</div>
-                <div class="sidetab">Hi there</div>
-                <div class="sidetab">Hi there</div>
-                <div class="sidetab">Hi there</div>
-                <div class="sidetab">Hi there</div>
-                <div class="sidetab">Hi there</div>
-                <div class="sidetab">Hi there</div>
-                <div class="sidetab">Hi there</div>
-                <div class="sidetab">Hi there</div>
-                <div class="sidetab">Hi there</div>
+                <div class="sidetab sideInput">
+                    <input type="text" v-model="addCategory" placeholder="Enter Here" id="sideInput"/>
+                    <button v-on:click="addTitle">Ok</button>
+                </div>
+                <div class="sidetab" v-for="title of Object.keys(titles)">{{title}}</div>
+                
             </div>
             <div class="mainBody">
-                <div class="card">Hello World</div>
-                <div class="card">Hello World</div>
-                <div class="card">Hello World</div>
-                <div class="card">Hello World</div>
-                <div class="card">Hello World</div>
-                <div class="card">Hello World</div>
-                <div class="card">Hello World</div>
-                <div class="card">Hello World</div>
-                <div class="card">Hello World</div>
-                <div class="card">Hello World</div>
-                <div class="card">Hello World</div>
-                <div class="card">Hello World</div>
-                <div class="card">Hello World</div>
                 <div class="card">Hello World</div>
             </div>
         </section>

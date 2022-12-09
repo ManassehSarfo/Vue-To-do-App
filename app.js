@@ -2,11 +2,16 @@ let app = new Vue({
     el: "#app",
     data() {
         return {
-            headerText: "Vue toDo App"
+            headerText: "To Do",
+            titles: {"General": {}, "Others": {}}, 
+            addCategory: ""
         }
     },
     methods: {
-
+        addTitle(){
+            this.titles[this.addCategory] = {};
+            this.addCategory = "";
+        }
     }
 })
 

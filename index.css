@@ -44,6 +44,16 @@ header{
     font-weight: bold;
 }
 
+#sideInput{
+    width: 90%;
+    margin-right: 5px;
+}
+
+.sideInput{
+    display: flex;
+    flex-direction: row;
+}
+
 .mainBody{
     margin-top: 5px;
     margin-left: 5px;
