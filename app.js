@@ -1,28 +1,44 @@
+class Task{
+
+    constructor(name){
+        this.name = name;
+        this.subTasks = [];
+        this.assignees = [];
+        this.isCompleted = false;
+        this.description = "";
+    }
+
+    addSubTask(task){
+        this.subTasks.push(task);
+    }
+}
+
 let app = new Vue({
     el: "#app",
     data() {
         return {
             headerText: "To Do",
-            titles: {"General": {}, "Others": {}}, 
-            addCategory: ""
+            titles: {
+                "General": new Task("General"),
+                "Others": new Task("Others")
+                }, 
+            addCategory: "",
+            activeTab: ""
         }
     },
     methods: {
-        addTitle(){
-            this.titles[this.addCategory] = {};
+        addTitle(name){
+            //assign a unique title for each main title or task
+            if(!Object.keys(this.titles).includes(name)){
+                this.titles[this.addCategory] = new Task(name);
+            }else{
+                console.log("The exact task or title name already exists")
+            }
             this.addCategory = "";
+        },
+        setActive(){
+            console.log(this)
         }
     }
 })
 
-const aCard = document.querySelector(".card");
-
-
-aCard.addEventListener('click', () => {
-    let selectedText = aCard.innerHTML;
-    if(selectedText === "Hello World"){
-        aCard.innerHTML = "Clicked on!"
-    }else{
-        aCard.innerHTML = "Hello World"
-    }
-})

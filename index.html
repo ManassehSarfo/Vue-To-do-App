@@ -20,11 +20,17 @@
                     <input type="text" v-model="addCategory" placeholder="Enter Here" id="sideInput"/>
                     <button v-on:click="addTitle">Ok</button>
                 </div>
-                <div class="sidetab" v-for="title of Object.keys(titles)">{{title}}</div>
+                <div class="sidetab" v-for="title of Object.keys(titles)">
+                    <div v-on:click="setActive">{{title}}</div>
+                </div>
                 
             </div>
             <div class="mainBody">
-                <div class="card">Testing out</div>
+                <div class="card">
+                    <h1>SubTask</h1>
+                    <p>Welcome to the papragraph</p>
+                    <button type="submit">Add more subtasks</button>
+                </div>
             </div>
         </section>
     </div>
