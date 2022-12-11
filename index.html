@@ -21,15 +21,31 @@
                     <button v-on:click="addTitle">Ok</button>
                 </div>
                 <div class="sidetab" v-for="title of Object.keys(titles)">
-                    <div v-on:click="setActive">{{title}}</div>
+                    <div v-on:click="setActive(title)">{{title}}</div>
                 </div>
                 
             </div>
             <div class="mainBody">
                 <div class="card">
-                    <h1>SubTask</h1>
-                    <p>Welcome to the papragraph</p>
-                    <button type="submit">Add more subtasks</button>
+                    <h1>This is the title for the suggestion</h1>
+                    <div>
+                        <span>This is more like a short or long description of what it entails</span> <br />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, 
+                        voluptatem consectetur molestiae explicabo delectus cumque amet 
+                        quis nemo molestias! Voluptatem esse eveniet facere non. Sed aut 
+                        modi iure quis unde recusandae aspernatur voluptatibus? Expedita 
+                        sassumenda reiciendis non recusandae esse delectus?
+                        </p>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Enter stakeholder's name" />
+                        <button type="submit">Add stakeholder</button>
+                    </div>
+                    <ul>
+                        <li>First stakeholder / plug</li>
+                        <li>Second stakeholder / plug</li>
+                    </ul>
                 </div>
             </div>
         </section>

@@ -85,3 +85,12 @@ header{
 .card:hover{
     box-shadow: none;
 }
+
+.card div{
+    width: 80%;
+}
+
+.card div span{
+    margin: 200px auto;
+}
+

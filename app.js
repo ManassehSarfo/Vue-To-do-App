@@ -36,8 +36,8 @@ let app = new Vue({
             }
             this.addCategory = "";
         },
-        setActive(){
-            console.log(this)
+        setActive(title){
+            console.log(title)
         }
     }
 })
